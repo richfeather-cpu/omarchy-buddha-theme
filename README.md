@@ -77,7 +77,7 @@ That replaces whatever art is there today. The optional extra below remembers th
 
 ### Optional rotating screensaver
 
-Omarchy will not run a theme's scripts at install time, and a cloned theme cannot install a hook for you. `extras/install.sh` does that job when you run it. From the installed theme:
+Running `extras/install.sh` is optional. The theme works fully without it. The script installs a screensaver hook. Omarchy does not run it for you. If you want that feature, run it yourself from the installed theme:
 
 ```bash
 ~/.config/omarchy/themes/buddha/extras/install.sh
