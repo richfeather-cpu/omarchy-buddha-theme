@@ -32,7 +32,7 @@ Omarchy builds the terminal, editor, browser, bar, menu, notifications, and lock
 | --- | --- |
 | `colors.toml` | Palette. `mode = "dark"`. |
 | `backgrounds/` | Four illustrated wallpapers, in filename order. |
-| `screensaver.txt` | Braille Buddha used by the optional screensaver. |
+| `screensaver.txt` | Braille Buddha with a golden halo, the same drawing as `screensavers/01_golden_halo.txt`. |
 | `icons.theme` | `Yaru-wartybrown`, so the file manager follows the earth tones. Delete this file to keep your current icons. |
 | `preview.png` | Theme-switcher thumbnail, 1800×1012. Omarchy looks for this name at the repository root. |
 | `wallpapers.png` | Contact sheet of the four wallpapers, for this page. The switcher ignores it. |
@@ -58,20 +58,6 @@ Omarchy builds the terminal, editor, browser, bar, menu, notifications, and lock
 | muted | `#b89968` |
 
 The neutral ramp runs from `darker_background` `#1a110d` up to `bright_foreground` `#fff4d8`.
-
-## Screensaver
-
-Omarchy draws its screensaver from one global file, `~/.config/omarchy/branding/screensaver.txt`, and animates that file with ttfx. Applying a theme does not change it. `screensaver.txt` in this repository is ready for that file: a Braille Buddha with a golden halo, the same drawing as `screensavers/01_golden_halo.txt`.
-
-```bash
-cp ~/.config/omarchy/themes/buddha/screensaver.txt ~/.config/omarchy/branding/screensaver.txt
-```
-
-That replaces whatever art is there today. The plain `.txt` files in `screensavers/` can replace the root `screensaver.txt` if you want the idle screensaver to show a different piece.
-
-### Optional screensaver
-
-The rotating player and the theme-switch hook live in [omarchy-buddha-screensaver](https://github.com/richfeather-cpu/omarchy-buddha-screensaver). They read `screensaver.txt` and `screensavers/` from `~/.config/omarchy/themes/buddha` after this theme is installed. This repository does not ship those scripts.
 
 ## Remove the theme
 
